@@ -15,12 +15,13 @@
       <file leaf-file-name="SmileService.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/SmileService.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="75">
-              <caret line="5" column="30" lean-forward="true" selection-start-line="5" selection-start-column="30" selection-end-line="5" selection-end-column="30" />
+            <state relative-caret-position="-377">
+              <caret line="35" column="52" lean-forward="true" selection-start-line="35" selection-start-column="52" selection-end-line="35" selection-end-column="52" />
               <folding>
+                <element signature="imports" expanded="true" />
                 <element signature="method#addHeaders#0;class#MyHandler#0;class#SmileService#0" expanded="false" />
-                <element signature="e#2953#2954#0" expanded="true" />
-                <element signature="e#3025#3026#0" expanded="true" />
+                <element signature="e#2957#2958#0" expanded="true" />
+                <element signature="e#3029#3030#0" expanded="true" />
                 <element signature="method#sendResponse#0;class#MyHandler#0;class#SmileService#0" expanded="false" />
               </folding>
             </state>
@@ -312,12 +313,12 @@
       <updated>1525758489457</updated>
       <workItem from="1525758496115" duration="4165000" />
       <workItem from="1525821665596" duration="9626000" />
-      <workItem from="1525837116127" duration="5433000" />
+      <workItem from="1525837116127" duration="6712000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="19224000" />
+    <option name="totallyTimeSpent" value="20503000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1680" height="947" extended-state="0" />
@@ -380,9 +381,10 @@
         <state relative-caret-position="165">
           <caret line="26" column="0" lean-forward="true" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
           <folding>
+            <element signature="imports" expanded="true" />
             <element signature="method#addHeaders#0;class#MyHandler#0;class#SmileService#0" expanded="false" />
-            <element signature="e#2953#2954#0" expanded="true" />
-            <element signature="e#3025#3026#0" expanded="true" />
+            <element signature="e#2957#2958#0" expanded="true" />
+            <element signature="e#3029#3030#0" expanded="true" />
             <element signature="method#sendResponse#0;class#MyHandler#0;class#SmileService#0" expanded="false" />
           </folding>
         </state>
@@ -417,9 +419,10 @@
         <state relative-caret-position="240">
           <caret line="27" column="17" lean-forward="true" selection-start-line="27" selection-start-column="17" selection-end-line="27" selection-end-column="17" />
           <folding>
+            <element signature="imports" expanded="true" />
             <element signature="method#addHeaders#0;class#MyHandler#0;class#SmileService#0" expanded="false" />
-            <element signature="e#2953#2954#0" expanded="true" />
-            <element signature="e#3025#3026#0" expanded="true" />
+            <element signature="e#2957#2958#0" expanded="true" />
+            <element signature="e#3029#3030#0" expanded="true" />
             <element signature="method#sendResponse#0;class#MyHandler#0;class#SmileService#0" expanded="false" />
           </folding>
         </state>
@@ -450,12 +453,13 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/SmileService.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" column="30" lean-forward="true" selection-start-line="5" selection-start-column="30" selection-end-line="5" selection-end-column="30" />
+        <state relative-caret-position="-377">
+          <caret line="35" column="52" lean-forward="true" selection-start-line="35" selection-start-column="52" selection-end-line="35" selection-end-column="52" />
           <folding>
+            <element signature="imports" expanded="true" />
             <element signature="method#addHeaders#0;class#MyHandler#0;class#SmileService#0" expanded="false" />
-            <element signature="e#2953#2954#0" expanded="true" />
-            <element signature="e#3025#3026#0" expanded="true" />
+            <element signature="e#2957#2958#0" expanded="true" />
+            <element signature="e#3029#3030#0" expanded="true" />
             <element signature="method#sendResponse#0;class#MyHandler#0;class#SmileService#0" expanded="false" />
           </folding>
         </state>

@@ -18,7 +18,7 @@ public class SmileService {
 
         InetSocketAddress address = new InetSocketAddress("10.242.21.125",9998);
         HttpServer server = HttpServer.create(address, 0);
-        server.createContext("/test", new MyHandler());
+        server.createContext("/server", new MyHandler());
         server.setExecutor(null); // creates a default executor
 
         server.start();
@@ -32,7 +32,7 @@ public class SmileService {
 
     private static void displayServerInfo(HttpServer server) throws IOException {
         System.out.println("Server running");
-        System.out.println("Visit: http://localhost:9998/test");
+        System.out.println("Visit: http://localhost:9998/server");
         System.out.println("Hit return to stop...");
         System.in.read();
         System.out.println("Stopping server");
