@@ -93,11 +93,7 @@ public class SmileService {
 
 
 
-            String response = smileys;
-            t.sendResponseHeaders(200, response.length());
-            OutputStream os = t.getResponseBody();
-            os.write(response.getBytes());
-            os.close();
+
         }
 
         private void addHeaders(HttpExchange t) {
@@ -116,11 +112,25 @@ public class SmileService {
         private void handlePut(HttpExchange t) throws IOException {
             String body = read(t.getRequestBody());
             System.out.println("putting: " + body);
-            smileys = "<p>" + body +"</p>" + "\n" + smileys;
-            String response = smileys;
+            appendMessage(body);
+            sendResponse(t, smileys);
         }
 
-        private void handleGet(HttpExchange t) {
+        private void appendMessage(String body) {
+            smileys = "<p>" + body + "</p>" + "\n" + smileys;
+        }
+
+        private void handleGet(HttpExchange t) throws IOException {
+            System.out.println("getting data");
+            sendResponse(t, smileys);
+
+        }
+
+        private void sendResponse(HttpExchange t, String response) throws IOException {
+            t.sendResponseHeaders(200, response.length());
+            OutputStream os = t.getResponseBody();
+            os.write(response.getBytes());
+            os.close();
         }
     }
 }
