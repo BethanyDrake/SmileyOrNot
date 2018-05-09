@@ -12,23 +12,51 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="SmileService.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="SmileService.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/SmileService.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-377">
-              <caret line="35" column="52" lean-forward="true" selection-start-line="35" selection-start-column="52" selection-end-line="35" selection-end-column="52" />
+            <state relative-caret-position="1845">
+              <caret line="150" column="23" lean-forward="true" selection-start-line="150" selection-start-column="23" selection-end-line="150" selection-end-column="23" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="method#addHeaders#0;class#MyHandler#0;class#SmileService#0" expanded="false" />
-                <element signature="e#2957#2958#0" expanded="true" />
-                <element signature="e#3029#3030#0" expanded="true" />
+                <element signature="e#2972#2973#0" expanded="true" />
+                <element signature="e#3044#3045#0" expanded="true" />
                 <element signature="method#sendResponse#0;class#MyHandler#0;class#SmileService#0" expanded="false" />
+                <element signature="method#addHeaders#0;class#MyHandler2#0;class#SmileService#0" expanded="false" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/out/production/SmileyOrNot2/index.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="135">
+              <caret line="9" column="7" lean-forward="true" selection-start-line="9" selection-start-column="7" selection-end-line="9" selection-end-column="7" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/index.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="45">
+              <caret line="3" column="19" lean-forward="false" selection-start-line="3" selection-start-column="19" selection-end-line="3" selection-end-column="24" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
     </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="HTML File" />
+      </list>
+    </option>
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
@@ -64,7 +92,9 @@
       <list>
         <option value="$PROJECT_DIR$/web/index.jsp" />
         <option value="$PROJECT_DIR$/web/WEB-INF/web.xml" />
+        <option value="$PROJECT_DIR$/src/index.html" />
         <option value="$PROJECT_DIR$/src/SmileService.java" />
+        <option value="$PROJECT_DIR$/out/production/SmileyOrNot2/index.html" />
       </list>
     </option>
   </component>
@@ -184,6 +214,7 @@
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="extract.method.default.visibility" value="private" />
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -313,12 +344,12 @@
       <updated>1525758489457</updated>
       <workItem from="1525758496115" duration="4165000" />
       <workItem from="1525821665596" duration="9626000" />
-      <workItem from="1525837116127" duration="6712000" />
+      <workItem from="1525837116127" duration="9024000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="20503000" />
+    <option name="totallyTimeSpent" value="22815000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1680" height="947" extended-state="0" />
@@ -383,9 +414,10 @@
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="method#addHeaders#0;class#MyHandler#0;class#SmileService#0" expanded="false" />
-            <element signature="e#2957#2958#0" expanded="true" />
-            <element signature="e#3029#3030#0" expanded="true" />
+            <element signature="e#2972#2973#0" expanded="true" />
+            <element signature="e#3044#3045#0" expanded="true" />
             <element signature="method#sendResponse#0;class#MyHandler#0;class#SmileService#0" expanded="false" />
+            <element signature="method#addHeaders#0;class#MyHandler2#0;class#SmileService#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -421,9 +453,10 @@
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="method#addHeaders#0;class#MyHandler#0;class#SmileService#0" expanded="false" />
-            <element signature="e#2957#2958#0" expanded="true" />
-            <element signature="e#3029#3030#0" expanded="true" />
+            <element signature="e#2972#2973#0" expanded="true" />
+            <element signature="e#3044#3045#0" expanded="true" />
             <element signature="method#sendResponse#0;class#MyHandler#0;class#SmileService#0" expanded="false" />
+            <element signature="method#addHeaders#0;class#MyHandler2#0;class#SmileService#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -451,17 +484,34 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="3" column="19" lean-forward="false" selection-start-line="3" selection-start-column="19" selection-end-line="3" selection-end-column="24" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/SmileService.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-377">
-          <caret line="35" column="52" lean-forward="true" selection-start-line="35" selection-start-column="52" selection-end-line="35" selection-end-column="52" />
+        <state relative-caret-position="1845">
+          <caret line="150" column="23" lean-forward="true" selection-start-line="150" selection-start-column="23" selection-end-line="150" selection-end-column="23" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="method#addHeaders#0;class#MyHandler#0;class#SmileService#0" expanded="false" />
-            <element signature="e#2957#2958#0" expanded="true" />
-            <element signature="e#3029#3030#0" expanded="true" />
+            <element signature="e#2972#2973#0" expanded="true" />
+            <element signature="e#3044#3045#0" expanded="true" />
             <element signature="method#sendResponse#0;class#MyHandler#0;class#SmileService#0" expanded="false" />
+            <element signature="method#addHeaders#0;class#MyHandler2#0;class#SmileService#0" expanded="false" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/out/production/SmileyOrNot2/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="9" column="7" lean-forward="true" selection-start-line="9" selection-start-column="7" selection-end-line="9" selection-end-column="7" />
+          <folding />
         </state>
       </provider>
     </entry>

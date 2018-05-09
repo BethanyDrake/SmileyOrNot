@@ -3,12 +3,11 @@ import com.sun.net.httpserver.HttpExchange;
 import com.sun.net.httpserver.HttpHandler;
 import com.sun.net.httpserver.HttpServer;
 
-import java.io.BufferedReader;
-import java.io.IOException;
-import java.io.InputStream;
-import java.io.InputStreamReader;
-import java.io.OutputStream;
+import java.io.*;
 import java.net.InetSocketAddress;
+import java.nio.charset.Charset;
+import java.nio.file.Files;
+import java.nio.file.Paths;
 import java.util.stream.Collectors;
 
 public class SmileService {
@@ -18,7 +17,9 @@ public class SmileService {
 
         InetSocketAddress address = new InetSocketAddress("10.242.21.125",9998);
         HttpServer server = HttpServer.create(address, 0);
+
         server.createContext("/server", new MyHandler());
+        server.createContext("/", new MyHandler2());
         server.setExecutor(null); // creates a default executor
 
         server.start();
@@ -32,7 +33,7 @@ public class SmileService {
 
     private static void displayServerInfo(HttpServer server) throws IOException {
         System.out.println("Server running");
-        System.out.println("Visit: http://localhost:9998/server");
+        System.out.println("Visit: http://10.242.21.125:9998/server");
         System.out.println("Hit return to stop...");
         System.in.read();
         System.out.println("Stopping server");
@@ -105,6 +106,45 @@ public class SmileService {
         }
 
         private void sendResponse(HttpExchange t, String response) throws IOException {
+            t.sendResponseHeaders(200, response.length());
+            OutputStream os = t.getResponseBody();
+            os.write(response.getBytes());
+            os.close();
+        }
+    }
+
+
+
+    static class MyHandler2 implements HttpHandler {
+        @Override
+        public void handle(HttpExchange t) throws IOException {
+            addHeaders(t);
+            sendResponse(t);
+
+        }
+
+        private void addHeaders(HttpExchange t) {
+            t.getResponseHeaders().add(
+                    "Access-Control-Allow-Origin", "*");
+            t.getResponseHeaders().add(
+                    "Access-Control-Allow-Credentials", "true");
+            t.getResponseHeaders().add(
+                    "Access-Control-Allow-Headers",
+                    "origin, content-type, accept, authorization");
+            t.getResponseHeaders().add(
+                    "Access-Control-Allow-Methods",
+                    "GET, POST, PUT, DELETE, OPTIONS, HEAD");
+        }
+
+
+        static String readFile(String path, Charset encoding)
+                throws IOException
+        {
+            byte[] encoded = Files.readAllBytes(Paths.get(path));
+            return new String(encoded, encoding);
+        }
+        private void sendResponse(HttpExchange t) throws IOException {
+            String response = readFile("/Users/bethany/Desktop/SmileyOrNot/SmileyOrNot/SmileyOrBack/out/production/SmileyOrNot2/index.html", Charset.defaultCharset());
             t.sendResponseHeaders(200, response.length());
             OutputStream os = t.getResponseBody();
             os.write(response.getBytes());
