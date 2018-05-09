@@ -26,12 +26,11 @@ public class SmileService {
     }
 
     public static void main(String[] args) throws IOException {
-        //HttpServer server = HttpServer.create("http://localhost:9998/");
-        //InetSocketAddress address = new InetSocketAddress( 9998);
+
         HttpServer server = HttpServer.create(new InetSocketAddress(9998), 0);
         server.createContext("/test", new MyHandler());
 
-       //server.createContext("/test2", new MyHandler2());
+
 
         server.setExecutor(null); // creates a default executor
 
@@ -61,31 +60,49 @@ public class SmileService {
     static class MyHandler implements HttpHandler {
         @Override
         public void handle(HttpExchange t) throws IOException {
-            System.out.println("handling request!");
+            //System.out.println("handling request!");
+
+
+            addHeaders(t);
+
+
+//            System.out.println(t.getRequestMethod());
 
 
 
-            System.out.println(t.getRequestMethod());
-            
-            if (t.getRequestMethod().equals("GET"))
+            switch (t.getRequestMethod())
             {
-                handleGet(t);
+                case "GET":
+
+                    handleGet(t);
+                    break;
+
+                case "POST":
+
+                    handlePut(t);
+                    break;
+                default:
+                    System.out.println("no matches for " + t.getRequestMethod());
+                    return;
+
+
             }
-            if (t.getRequestMethod().equals("PUT"))
-            {
-                handlePut(t);
-            }
+
+//            System.out.println(t.getRequestHeaders());
+//            System.out.println(t.getRequestURI());
 
 
 
-            String body = read(t.getRequestBody());
-            System.out.println(body);
+            String response = smileys;
+            t.sendResponseHeaders(200, response.length());
+            OutputStream os = t.getResponseBody();
+            os.write(response.getBytes());
+            os.close();
+        }
 
-
-            System.out.println(t.getRequestHeaders());
-            System.out.println(t.getRequestURI());
-
-            t.getResponseHeaders().add( "Access-Control-Allow-Origin", "*");
+        private void addHeaders(HttpExchange t) {
+            t.getResponseHeaders().add(
+                    "Access-Control-Allow-Origin", "*");
             t.getResponseHeaders().add(
                     "Access-Control-Allow-Credentials", "true");
             t.getResponseHeaders().add(
@@ -94,22 +111,13 @@ public class SmileService {
             t.getResponseHeaders().add(
                     "Access-Control-Allow-Methods",
                     "GET, POST, PUT, DELETE, OPTIONS, HEAD");
-
-            smileys = "<p>" + body +"</p>" + "\n" + smileys;
-            String response = smileys;
-
-            t.sendResponseHeaders(200, response.length());
-
-
-
-
-
-            OutputStream os = t.getResponseBody();
-            os.write(response.getBytes());
-            os.close();
         }
 
-        private void handlePut(HttpExchange t) {
+        private void handlePut(HttpExchange t) throws IOException {
+            String body = read(t.getRequestBody());
+            System.out.println("putting: " + body);
+            smileys = "<p>" + body +"</p>" + "\n" + smileys;
+            String response = smileys;
         }
 
         private void handleGet(HttpExchange t) {
