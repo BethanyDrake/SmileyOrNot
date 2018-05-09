@@ -15,15 +15,15 @@
       <file leaf-file-name="SmileService.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/SmileService.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-9">
-              <caret line="43" column="25" lean-forward="true" selection-start-line="43" selection-start-column="25" selection-end-line="43" selection-end-column="25" />
+            <state relative-caret-position="689">
+              <caret line="63" column="12" lean-forward="false" selection-start-line="63" selection-start-column="12" selection-end-line="63" selection-end-column="12" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#788#789#0" expanded="true" />
                 <element signature="e#874#875#0" expanded="true" />
                 <element signature="method#addHeaders#0;class#MyHandler#0;class#SmileService#0" expanded="false" />
-                <element signature="e#3449#3450#0" expanded="true" />
-                <element signature="e#3521#3522#0" expanded="true" />
+                <element signature="e#3218#3219#0" expanded="true" />
+                <element signature="e#3290#3291#0" expanded="true" />
                 <element signature="method#sendResponse#0;class#MyHandler#0;class#SmileService#0" expanded="false" />
               </folding>
             </state>
@@ -297,15 +297,16 @@
       <updated>1525758489457</updated>
       <workItem from="1525758496115" duration="4165000" />
       <workItem from="1525821665596" duration="9626000" />
-      <workItem from="1525837116127" duration="3241000" />
+      <workItem from="1525837116127" duration="3577000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="17032000" />
+    <option name="totallyTimeSpent" value="17368000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1680" height="947" extended-state="0" />
+    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -368,8 +369,8 @@
             <element signature="e#788#789#0" expanded="true" />
             <element signature="e#874#875#0" expanded="true" />
             <element signature="method#addHeaders#0;class#MyHandler#0;class#SmileService#0" expanded="false" />
-            <element signature="e#3449#3450#0" expanded="true" />
-            <element signature="e#3521#3522#0" expanded="true" />
+            <element signature="e#3218#3219#0" expanded="true" />
+            <element signature="e#3290#3291#0" expanded="true" />
             <element signature="method#sendResponse#0;class#MyHandler#0;class#SmileService#0" expanded="false" />
           </folding>
         </state>
@@ -408,8 +409,8 @@
             <element signature="e#788#789#0" expanded="true" />
             <element signature="e#874#875#0" expanded="true" />
             <element signature="method#addHeaders#0;class#MyHandler#0;class#SmileService#0" expanded="false" />
-            <element signature="e#3449#3450#0" expanded="true" />
-            <element signature="e#3521#3522#0" expanded="true" />
+            <element signature="e#3218#3219#0" expanded="true" />
+            <element signature="e#3290#3291#0" expanded="true" />
             <element signature="method#sendResponse#0;class#MyHandler#0;class#SmileService#0" expanded="false" />
           </folding>
         </state>
@@ -440,15 +441,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/SmileService.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-9">
-          <caret line="43" column="25" lean-forward="true" selection-start-line="43" selection-start-column="25" selection-end-line="43" selection-end-column="25" />
+        <state relative-caret-position="689">
+          <caret line="63" column="12" lean-forward="false" selection-start-line="63" selection-start-column="12" selection-end-line="63" selection-end-column="12" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#788#789#0" expanded="true" />
             <element signature="e#874#875#0" expanded="true" />
             <element signature="method#addHeaders#0;class#MyHandler#0;class#SmileService#0" expanded="false" />
-            <element signature="e#3449#3450#0" expanded="true" />
-            <element signature="e#3521#3522#0" expanded="true" />
+            <element signature="e#3218#3219#0" expanded="true" />
+            <element signature="e#3290#3291#0" expanded="true" />
             <element signature="method#sendResponse#0;class#MyHandler#0;class#SmileService#0" expanded="false" />
           </folding>
         </state>

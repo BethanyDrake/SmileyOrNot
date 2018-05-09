@@ -60,16 +60,7 @@ public class SmileService {
     static class MyHandler implements HttpHandler {
         @Override
         public void handle(HttpExchange t) throws IOException {
-            //System.out.println("handling request!");
-
-
             addHeaders(t);
-
-
-//            System.out.println(t.getRequestMethod());
-
-
-
             switch (t.getRequestMethod())
             {
                 case "GET":
@@ -87,11 +78,6 @@ public class SmileService {
 
 
             }
-
-//            System.out.println(t.getRequestHeaders());
-//            System.out.println(t.getRequestURI());
-
-
 
 
         }
@@ -121,7 +107,7 @@ public class SmileService {
         }
 
         private void handleGet(HttpExchange t) throws IOException {
-            System.out.println("getting data");
+
             sendResponse(t, smileys);
 
         }
