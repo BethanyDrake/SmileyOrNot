@@ -6,12 +6,25 @@
   </head>
   <body>
     <h1> Hi! </h1>
-    <div>
-      Message: <input id="message" type="text" name="message"><br>
-      <input id="submitButton" type="submit" value="Submit">
-    </div>
-    <div id=messages> </h2>
-  </body>
-</html>
 
-<script src=smiley.js></script>
+
+    <div id=login>
+      Who is Smiling? <input id="username" type="text" name="username"><br>
+      <input id="submitName" type="submit" value="Submit">
+
+    </div>
+
+    <div id=submitMessageDiv>
+      Message: <input id="message" type="text" name="message"><br>
+      <input id="submitMessage" type="submit" value="Submit">
+
+    </div>
+    <div id=messages> </div>
+  </body>
+
+  <script src="login.js"></script>
+  <script src=smiley.js></script>
+  <script src=displayMessages.js></script>
+
+
+</html>

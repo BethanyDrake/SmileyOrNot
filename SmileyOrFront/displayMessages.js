@@ -1,3 +1,6 @@
+console.log("displayong messages");
+
+
 var xhttp = new XMLHttpRequest();
 
 
