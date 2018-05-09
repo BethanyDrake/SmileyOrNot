@@ -4,7 +4,7 @@ var postRequest = new XMLHttpRequest();
 var messageText = "";
 
 var submitMessage = function(message){
-  postRequest.open("POST", "http://localhost:9998/test", true);
+  postRequest.open("POST", "http://10.242.21.125:9998/test", true);
 
   postRequest.send(username+": "+message);
 };

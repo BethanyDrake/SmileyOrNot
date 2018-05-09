@@ -15,11 +15,17 @@ public class SmileService {
 
     public static void main(String[] args) throws IOException {
 
-        HttpServer server = HttpServer.create(new InetSocketAddress(9998), 0);
+
+        InetSocketAddress address = new InetSocketAddress("10.242.21.125",9998);
+        HttpServer server = HttpServer.create(address, 0);
         server.createContext("/test", new MyHandler());
         server.setExecutor(null); // creates a default executor
 
         server.start();
+
+        System.out.println("host name: " + address);
+
+
 
         displayServerInfo(server);
     }
