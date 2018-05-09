@@ -1,7 +1,4 @@
-console.log("running! still");
-
 var xhttp = new XMLHttpRequest();
-var messageText = "";
 
 
 //xhttp.open("GET", "http://localhost:9998/test/hithere", true);
@@ -21,22 +18,3 @@ xhttp.onreadystatechange = function() {
 
 
 getRecentMessages();
-
-var submitMessage = function(message){
-  xhttp.open("POST", "http://localhost:9998/test", true);
-
-  xhttp.send(message);
-};
-
-
-
-var submitButton = document.getElementById("submitButton");
-var input = document.getElementById("message");
-
-submitButton.onclick = function(){
-  console.log("clicked");
-  messageText =input.value;
-  input.value = "";
-  console.log(messageText);
-  submitMessage(messageText);
-};
