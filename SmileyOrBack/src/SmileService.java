@@ -11,8 +11,6 @@ import java.io.OutputStream;
 import java.net.InetSocketAddress;
 import java.util.stream.Collectors;
 
-
-
 public class SmileService {
 
     public static void main(String[] args) throws IOException {
@@ -64,7 +62,7 @@ public class SmileService {
                 default:
                     System.out.println("no matches for " + t.getRequestMethod());
                     return;
-                    
+
             }
 
 
