@@ -12,30 +12,31 @@ export class Messages extends React.Component{
     let request = this.xhttp;
     let messages = this;
     return function() {
-      console.log('hi');
+      //console.log('hi');
       //console.log(request);
         if (request.readyState == 4 && request.status == 200) {
            // Typical action to be performed when the document is ready:
-          console.log('reeady');
+          //console.log('reeady');
            messages.content = request.responseText;
            messages.setState({isRefreshing: true})
-           //messages.getRecentMessages();
+           request.abort();
+           messages.getRecentMessages();
+
         }
     };
   };
 
+  getRecentMessages(){
+    //console.log("getting recent messages");
+    this.xhttp.open("GET", "http://10.242.125.31:9998/server", true);
+    this.xhttp.send();
+  };
 
   constructor(){
     super();
     this.state = {isRefreshing: false};
     this.xhttp = new XMLHttpRequest();
     this.content = '';
-    this.getRecentMessages = function(){
-      console.log("getting recent messages");
-      this.xhttp.open("GET", "http://10.242.125.31:9998/server", true);
-      this.xhttp.send();
-    };
-
     this.xhttp.onreadystatechange = this.getUpdateFunction();
     this.getRecentMessages();
 
@@ -46,7 +47,7 @@ export class Messages extends React.Component{
 
   render() {
     return (
-      <Text>Hi {this.content} !</Text>
+      <Text>Hi {this.content} ! </Text>
 
     );
   };
