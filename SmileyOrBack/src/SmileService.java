@@ -15,7 +15,7 @@ public class SmileService {
     public static void main(String[] args) throws IOException {
 
 
-        InetSocketAddress address = new InetSocketAddress("10.242.21.125",9998);
+        InetSocketAddress address = new InetSocketAddress("10.242.125.31",9998);
         HttpServer server = HttpServer.create(address, 0);
 
         server.createContext("/server", new MyHandler());
@@ -33,7 +33,7 @@ public class SmileService {
 
     private static void displayServerInfo(HttpServer server) throws IOException {
         System.out.println("Server running");
-        System.out.println("Visit: http://10.242.21.125:9998/server");
+        System.out.println("Visit: http://10.242.125.31:9998/server");
         System.out.println("Hit return to stop...");
         System.in.read();
         System.out.println("Stopping server");
