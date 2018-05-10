@@ -106,7 +106,7 @@ public class SmileService {
         }
 
         private void sendResponse(HttpExchange t, String response) throws IOException {
-            t.sendResponseHeaders(200, response.length());
+            t.sendResponseHeaders(200, response.getBytes().length);
             OutputStream os = t.getResponseBody();
             os.write(response.getBytes());
             os.close();
