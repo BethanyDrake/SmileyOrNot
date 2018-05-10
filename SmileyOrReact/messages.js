@@ -11,11 +11,7 @@ export class Messages extends React.Component{
     let request = this.xhttp;
     let messages = this;
     return function() {
-      //console.log('hi');
-      //console.log(request);
         if (request.readyState == 4 && request.status == 200) {
-           // Typical action to be performed when the document is ready:
-          //console.log('reeady');
            messages.content = request.responseText;
            messages.setState({isRefreshing: true})
            request.abort();
