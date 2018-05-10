@@ -96,7 +96,7 @@ public class SmileService {
         }
 
         private void appendMessage(String body) {
-            smileys = "<p>" + body + "</p>" + "\n" + smileys;
+            smileys = body + "," + smileys;
         }
 
         private void handleGet(HttpExchange t) throws IOException {

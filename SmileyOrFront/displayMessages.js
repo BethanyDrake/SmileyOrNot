@@ -7,11 +7,19 @@ var getRecentMessages = function(){
   xhttp.send();
 };
 
+var join = function(result, next){
+  return result + '<p>' + next + '</p>';
+}
 
+var process = function(commaSeparatedList){
+  return (
+    commaSeparatedList.split(',').reduce(join, '')
+        );
+};
 xhttp.onreadystatechange = function() {
     if (this.readyState == 4 && this.status == 200) {
        // Typical action to be performed when the document is ready:
-       document.getElementById("messages").innerHTML = xhttp.responseText;
+       document.getElementById("messages").innerHTML = process(xhttp.responseText);
        getRecentMessages();
     }
 };
