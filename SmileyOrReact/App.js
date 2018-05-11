@@ -34,7 +34,6 @@ export default class App extends React.Component {
     return (
       <View style ={styles.container}>
       <Login controller={this}/>
-      <Sender username={this.username}/>
       <Messages/>
       </View>
     )
