@@ -4,6 +4,8 @@ import {Greeting} from './greeting.js'
 import {Messages} from './messages.js'
 import {Sender} from './sender.js'
 import {Login} from './login.js'
+import {Logout} from './logout.js'
+
 export default class App extends React.Component {
 
   constructor(){
@@ -17,6 +19,12 @@ export default class App extends React.Component {
     this.username = username;
     this.setState({isLoggedIn: true})
   };
+  logout(){
+    console.log("logout")
+    this.username = '';
+    this.setState({isLoggedIn: false})
+  };
+
 
 
   render() {
@@ -26,6 +34,7 @@ export default class App extends React.Component {
     {
       return (
         <View style ={styles.container}>
+        <Logout controller={this}/>
         <Sender username={this.username}/>
         <Messages/>
         </View>
