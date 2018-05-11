@@ -9,16 +9,28 @@ export default class App extends React.Component {
   constructor(){
     super();
     this.username = '';
+    this.state = {isLoggedIn: false};
   };
 
   login(username){
     console.log("login " + username);
     this.username = username;
-    this.setState({isLoggeIn: true})
+    this.setState({isLoggedIn: true})
   };
 
 
   render() {
+
+
+    if (this.state.isLoggedIn)
+    {
+      return (
+        <View style ={styles.container}>
+        <Sender username={this.username}/>
+        <Messages/>
+        </View>
+      )
+    }
     return (
       <View style ={styles.container}>
       <Login controller={this}/>
