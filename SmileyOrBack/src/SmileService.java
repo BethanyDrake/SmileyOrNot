@@ -144,7 +144,7 @@ public class SmileService {
             return new String(encoded, encoding);
         }
         private void sendResponse(HttpExchange t) throws IOException {
-            String response = readFile("/Users/bethany/Desktop/SmileyOrNot/SmileyOrNot/SmileyOrBack/out/production/SmileyOrNot2/index.html", Charset.defaultCharset());
+            String response = readFile("out/production/SmileyOrNot2/SmileyOrFront/index.html", Charset.defaultCharset());
             t.sendResponseHeaders(200, response.length());
             OutputStream os = t.getResponseBody();
             os.write(response.getBytes());
